@@ -1,10 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Login
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
 
@@ -18,35 +12,68 @@
           alt="balaozin">
       </ion-col>
 
-      <ion-col size="6">
+      <ion-col size="6 " class="ion-text-center">
+        <ion-label>
+          <h1>Criar Conta</h1>
+        </ion-label>
 
-        <h1>Criar conta</h1>
-
-        <ion-list>
-          <ion-item>
-        <div id="caixas">
-       <ion-input type="text" placeholder="Nome"></ion-input>
-            </div>
-            </ion-item>
-          
-          <ion-item>
-          <div id="caixas">
-              <ion-input  type="text" placeholder="E-mail"></ion-input>
-            </div>
-            </ion-item>
-          <ion-item>
-            <div id="caixas">
-              <ion-input  type="text" placeholder="Senha"></ion-input>
-            </div>
-          </ion-item>
-          
-          <ion-item>
-          <div id="caixas">
-            <ion-input type="text" placeholder="Confirmar Senha"></ion-input>
-          </div>
-        </ion-item>
         
-      </ion-list>
+        
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="6">
+              <ion-item>
+                <div id="caixas">
+                  <ion-input type="text" placeholder="Nome"></ion-input>
+                </div>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="6">
+              <ion-item>
+                <div id="caixas">
+                  <ion-input type="text" placeholder="E-mail"></ion-input>
+                </div>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="6">
+              <ion-item>
+                <div id="caixas">
+                  <ion-input type="text" placeholder="Senha"></ion-input>
+                </div>
+              </ion-item>
+              
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="6">
+              <ion-item>
+                <div id="caixas">
+                  <ion-input type="text" placeholder="Confirmar Senha"></ion-input>
+                </div>
+              </ion-item>
+              
+            </ion-col>
+          </ion-row>
+
+
+
+          <ion-button id="criar" shape="round" color="success">Criar Conta</ion-button>
+              
+          <ion-label>
+            <h2>Criar Conta</h2>
+          </ion-label>
+
+          <ion-button shape="round" color="tertiary"> Faceboock</ion-button><br>
+          <ion-button shape="round" color="secondary">Twitter</ion-button><br>
+          <ion-button shape="round" color="danger">Google</ion-button>
+           
+        
       </ion-col>
     </ion-row>
   </ion-grid>
