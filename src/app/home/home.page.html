@@ -7,16 +7,54 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ <ion-row>
+  <ion-col>
+<ion-item>
+  
+<ion-label>  {{ this.alunos.nome }}  </ion-label>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+</ion-item>
+</ion-col>
+ </ion-row>
+
+ <ion-row>
+  <ion-col>
+
+<ng-container *ngFor="let telefone of this.alunos.telefones">
+  <ion-item>
+
+    <ion-label> {{ telefone.Numero }} </ion-label>
+
+  </ion-item>
+</ng-container>
+
+  </ion-col>
+ </ion-row>
+
+ <ion-row>
+  <ion-col>
+<ion-item>
+
+<ion-label> {{ this.alunos.Rm }}  </ion-label>
+
+</ion-item>
+</ion-col>
+ </ion-row>
+
+ <ion-row>
+  <ion-col>
+    <ng-container *ngFor="let curso of this.alunos.Cursos">    
+    <ion-item>
+
+      <ion-label>{{ curso.nome }}</ion-label> <ion-label>{{ curso.Horario}}</ion-label>
+
+    </ion-item>
+  </ng-container>
+  </ion-col>
+ </ion-row>
+
+
+
+
+
 </ion-content>
