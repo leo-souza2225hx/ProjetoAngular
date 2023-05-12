@@ -13,8 +13,16 @@
     <ion-col>
       <ion-item>
       
-        <ion-avatar> <img src="{{this.perfil.foto_perfil}}"></ion-avatar>
-        <ion-label></ion-label>
+        <ion-item>     
+          <ion-label> 
+             <ion-avatar> <img src="{{this.perfil.foto_perfil}}"></ion-avatar>
+            <ion-label>{{ this.perfil.nome }}</ion-label>
+            <ion-label>{{ this.perfil.profissao }}</ion-label>
+            
+         </ion-label>
+        </ion-item>
+        <ion-button>Seguir</ion-button> <ion-button [disabled]="true">Mensagem</ion-button>
+
       </ion-item>
     </ion-col>
    </ion-row>
@@ -23,7 +31,31 @@
    <ion-row>
     <ion-col>
       <ion-item>
-      
+        <ion-label>Curtidas<br> {{ this.metricas_sociais.curtidas}}</ion-label><ion-label> Seguindo<br> {{ this.metricas_sociais.seguidores}}</ion-label><ion-label>Amigos<br> {{ this.metricas_sociais.amigos}}</ion-label>
+      </ion-item>
+    </ion-col>
+   </ion-row>
+
+   
+   <ion-row>
+    <ion-col>
+      <ion-item>     
+        <ion-label>Sobre<br>{{this.perfil.biografia}}</ion-label>
+      </ion-item>
+    </ion-col>
+   </ion-row>
+    
+
+   <ion-row>
+    <ion-col>
+      <ion-item>     
+        <ion-label> 
+         
+          <ion-label>{{ this.perfil.nome }}</ion-label>
+          <ion-label>{{ this.perfil.profissao }}</ion-label>
+          <ion-label>{{ this.perfil.profissao }}</ion-label>
+
+       </ion-label>
       </ion-item>
     </ion-col>
    </ion-row>
