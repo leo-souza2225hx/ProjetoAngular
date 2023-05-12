@@ -70,9 +70,13 @@
   <ion-col>
     <ng-container *ngFor="let posts of this.postagens">    
       <ion-item>
-  
-   
-  
+        <ion-avatar>
+          <img src="{{ posts.perfil.foto}}">
+
+        </ion-avatar>
+        <ion-label>{{ posts.perfil.nome}}</ion-label>
+        <ion-label>{{ posts.perfil.mencao_perfil}}</ion-label>
+        <ion-label>{{ posts.postagem.mensagem}}</ion-label>
       </ion-item>
     </ng-container>
   </ion-col>
