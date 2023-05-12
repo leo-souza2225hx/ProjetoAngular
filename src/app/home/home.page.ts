@@ -10,7 +10,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule,CommonModule],
 })
 export class HomePage {
-  perfil = {
+perfil = {
     nome: 'Carlitos', 
     profissao: 'Professor', 
     mencao: '@carlitos', 
