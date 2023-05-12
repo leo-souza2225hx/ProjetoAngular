@@ -7,54 +7,27 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-row>
-  <ion-col>
-<ion-item>
-  
-<ion-label>  {{ this.alunos.nome }}  </ion-label>
 
-</ion-item>
-</ion-col>
- </ion-row>
-
- <ion-row>
-  <ion-col>
-
-<ng-container *ngFor="let telefone of this.alunos.telefones">
-  <ion-item>
-
-    <ion-label> {{ telefone.Numero }} </ion-label>
-
-  </ion-item>
-</ng-container>
-
-  </ion-col>
- </ion-row>
-
- <ion-row>
-  <ion-col>
-<ion-item>
-
-<ion-label> {{ this.alunos.Rm }}  </ion-label>
-
-</ion-item>
-</ion-col>
- </ion-row>
-
- <ion-row>
-  <ion-col>
-    <ng-container *ngFor="let curso of this.alunos.Cursos">    
-    <ion-item>
-
-      <ion-label>{{ curso.nome }}</ion-label> <ion-label>{{ curso.Horario}}</ion-label>
-
-    </ion-item>
-  </ng-container>
-  </ion-col>
- </ion-row>
+ 
+   <ion-row>
+    <ion-col>
+      <ion-item>
+      
+        <ion-avatar> <img src="{{this.perfil.foto_perfil}}"></ion-avatar>
+        <ion-label></ion-label>
+      </ion-item>
+    </ion-col>
+   </ion-row>
 
 
-
+   <ion-row>
+    <ion-col>
+      <ion-item>
+      
+      </ion-item>
+    </ion-col>
+   </ion-row>
+    
 
 
 </ion-content>
