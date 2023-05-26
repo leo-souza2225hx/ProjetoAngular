@@ -1,5 +1,22 @@
+ion-content{
+  --background: rgb(255,255,255);
+  --background: linear-gradient(90deg, rgb(142, 17, 245) 20%, rgb(0, 81, 255)100%);
+}
+img{
+  border-radius: 16px;
+  
+}
 .divisor{
   height: 50vh;
   overflow: hidden;
   align-items: center;
+
+
+}
+.image {
+  background-image: url('https://s2.glbimg.com/_SNwRBXpexCnbUTYdqcvJ_AXpXw=/0x0:1200x700/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/c/u/JMc0NrTZGew6dSglJMSQ/mario-bros.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
