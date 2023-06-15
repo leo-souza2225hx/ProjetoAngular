@@ -1,22 +1,68 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="secondary" (click)="exibir(7)">%</ion-button>
+        <ion-button color="secondary" (click)="exibir(8)">C</ion-button>
+        <ion-button color="danger" (click)="exibir(9)">⌫</ion-button>
+        <ion-button color="secondary" (click)="exibir(8)">/</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      <ion-button color="tertiary" (click)="exibir(7)">7</ion-button>
+      <ion-button color="tertiary" (click)="exibir(8)">8</ion-button>
+      <ion-button color="tertiary" (click)="exibir(9)">9</ion-button>
+      <ion-button color="secondary" (click)="exibir(8)">*</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      <ion-button color="tertiary" (click)="exibir(4)">4</ion-button>
+      <ion-button color="tertiary" (click)="exibir(5)">5</ion-button>
+      <ion-button color="tertiary" (click)="exibir(6)">6</ion-button>
+      <ion-button color="secondary"(click)="exibir(8)">-</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+      <ion-button color="tertiary" (click)="exibir(1)">1</ion-button>
+      <ion-button color="tertiary" (click)="exibir(2)">2</ion-button>
+      <ion-button color="tertiary" (click)="exibir(3)">3</ion-button>
+      <ion-button color="secondary" (click)="exibir(8)">+</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+     
+        <ion-col size="3">
+          <ion-button expand="full" color="secondary" (click)="exibir(1)">0</ion-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button expand="full" color="success" (click)="exibir(2)">=</ion-button>
+        </ion-col>
+     
+      </ion-row>
+  </ion-grid>
+ 
+
+
 </ion-content>
