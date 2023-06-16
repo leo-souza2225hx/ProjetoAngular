@@ -1,7 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Calculadora 2000
+      Calculadora for kids
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -19,8 +20,8 @@
     <ion-row>
       <ion-col size="12">
         <ion-button color="secondary" (click)="exibir(37)">%</ion-button>
-        <ion-button color="secondary" (click)="exibir(67)">C</ion-button>
-        <ion-button color="danger" (click)="exibir(127)">⌫</ion-button>
+        <ion-button color="secondary" (click)="clear()">C</ion-button>
+        <ion-button color="danger" (click)="deleteDigit()">⌫</ion-button>
         <ion-button color="secondary" (click)="operacao('/')">/</ion-button>
       </ion-col>
     </ion-row>
@@ -51,9 +52,10 @@
     <ion-row>
       <ion-col size="12">
         <ion-button size="large" color="tertiary" (click)="exibir(0)">0</ion-button>
-        <ion-button size="large" color="tertiary" (click)="exibir(46)">.</ion-button>
-        <ion-button size="large" color="success" (click)="exibir(61)">=</ion-button>
+        <ion-button size="large" color="tertiary" (click)="exibir('.')">.</ion-button>
+        <ion-button size="large" color="success" (click)= "calcular()">=</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+
