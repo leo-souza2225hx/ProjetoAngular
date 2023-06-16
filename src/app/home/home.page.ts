@@ -10,8 +10,13 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule,CommonModule],
 })
 export class HomePage {
+  
+ 
+  
   exibir(numero: number) {
+
 		console.log(numero);
 	}
+  
 
 }
