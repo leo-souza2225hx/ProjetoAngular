@@ -8,29 +8,27 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule,CommonModule,FormsModule],
+  imports: [IonicModule,CommonModule,FormsModule]
 })
 export class HomePage {
   
   //valores
 
- valor1:any = null;
- valor2:any = null;
- resultado:any=null;
+ valor1:string = '';
+ valor2:string = '';
+ resultado:any='';
  operador:any=null;
 
 etapa1:any=true
   
-  exibir(numero:any) {
+  exibir(numero:string) {
  
-   if(this.valor1==null){
-    this.valor1 = numero
-    this.resultado = numero
-   }else{
-    if(this.valor2==null){
-      this.valor2=numero;
-      this.resultado = numero
-    }
+   if(this.etapa1==true){
+    this.valor1 += numero
+    this.resultado += numero
+   }else{   
+      this.valor2+=numero;
+      this.resultado += numero
    }
   //mostrar no console
 		console.log(this.valor1);
@@ -40,39 +38,40 @@ etapa1:any=true
 
   operacao(operador:any){
     this.operador=operador
+    this.etapa1=false
   }
    
   calcular(){
     //operações logicas
     if(this.operador=='+'){
-      this.resultado=this.valor1 + this.valor2;
+      this.resultado=Number(this.valor1) + Number(this.valor2);
     }
     else if(this.operador=='-'){
-      this.resultado= this.valor1 - this.valor2;
+      this.resultado= Number(this.valor1) - Number(this.valor2);
     }
     else if(this.operador=='*'){
-      this.resultado = this.valor1 * this.valor2;
+      this.resultado = Number(this.valor1) * Number(this.valor2);
     }
     else if(this.operador=='/'){
-      this.resultado = this.valor1 / this.valor2;
+      this.resultado = Number(this.valor1) / Number(this.valor2);
     }
     console.log(this.operador);
   }
 
   deleteDigit() {
    if (this.valor1 != null && this.valor2==null){
-      this.valor1=null
-      this.resultado=null
+      this.valor1=''
+      this.resultado=''
    }
    if (this.valor1 != null && this.valor2 !=null){
-    this.valor2=null
-    this.resultado=null
+    this.valor2=''
+    this.resultado=''
  }
   }
   clear(){
-    this.valor1=null
-    this.valor2=null
-    this.resultado=null
+    this.valor1=''
+    this.valor2=''
+    this.resultado=''
     this.operador=null
   }
 
