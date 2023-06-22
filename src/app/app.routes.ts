@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'mario',
+    loadComponent: () => import('./mario/mario.page').then( m => m.MarioPage)
+  },
 ];
