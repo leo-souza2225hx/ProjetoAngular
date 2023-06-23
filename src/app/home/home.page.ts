@@ -59,14 +59,10 @@ etapa1:any=true
   }
 
   deleteDigit() {
-   if (this.valor1 != null && this.valor2==null){
-      this.valor1=''
-      this.resultado=''
-   }
-   if (this.valor1 != null && this.valor2 !=null){
+    this.valor1=''
     this.valor2=''
     this.resultado=''
- }
+    this.operador=null
   }
   clear(){
     this.valor1=''
