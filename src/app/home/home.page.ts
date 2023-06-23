@@ -73,6 +73,3 @@ etapa1:any=true
 
 }
 
-
-
-
