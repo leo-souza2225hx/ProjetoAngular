@@ -57,7 +57,7 @@ etapa1:any=true
     }
     console.log(this.operador);
   }
-
+//delete da calculadora
   deleteDigit() {
     this.valor1=''
     this.valor2=''
