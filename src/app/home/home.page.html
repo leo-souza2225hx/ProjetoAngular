@@ -6,49 +6,52 @@
           <ion-title>Menu Content</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-conted class="ion-padding">Personagens da nintendo baixo⬇️:
-
-
-        <ion-button class="ion-padding" expand="full" routerLink="/mario">Mario</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/princesa-peach">Princesa Peach</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/luigi">Luigi</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/yoshi">Yoshi</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/bowser">Bowser</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/toad">Toad</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/wario">Wario</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/waluigi">Waluigi</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/princesa-daisy">Princesa Daisy</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/rosalina">Rosalina</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/donkey-kong">Donkey Kong</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/diddy-kong">Diddy Kong</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/lakitu">Lakitu</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/shyguy">Shy guy</ion-button><br>
-        <ion-button class="ion-padding" expand="full" routerLink="/sobre">Sobre</ion-button>
-      </ion-conted
-
+      <ion-content id="fundo" class="ion-padding">
+        <h3>Personagens:</h3>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/mario">Mario</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/princesa-peach">Princesa Peach</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/luigi">Luigi</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/yoshi">Yoshi</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/bowser">Bowser</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/toad">Toad</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/wario">Wario</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/waluigi">Waluigi</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/princesa-daisy">Princesa Daisy</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/rosalina">Rosalina</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/donkey-kong">Donkey Kong</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/diddy-kong">Diddy Kong</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/lakitu">Lakitu</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/shyguy">Shy Guy</ion-button>
+        <ion-button class="ion-padding" shape="round"  expand="full" routerLink="/sobre">Sobre</ion-button>
+      </ion-content>
     </ion-menu>
+
     <div class="inicio" id="main-content">
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-          <ion-title>Classicos da Nintendo!</ion-title>
+          <ion-title>Clássicos da Nintendo!</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <ion-row>
+        <ion-col >
+          <div class="content-wrapper">
+            <h1>Bem-vindo aos Clássicos da Nintendo</h1>
+            <h2>Aqui você vai encontrar os clássicos personagens de Mario</h2>
     
+            <div class="logo-container">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Nintendo_red_logo.svg/2560px-Nintendo_red_logo.svg.png" alt="Nintendo Logo">
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
 
-        <h1>Bem vindo aos Classicos da Nintendo</h1>
-        <ion-row>
-          <ion-col size="12" id="titulo">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Nintendo_red_logo.svg/2560px-Nintendo_red_logo.svg.png" alt="">
-
-          </ion-col>
-        </ion-row>
-
-
-  
+      
     </div>
   </ion-app>
 </ion-content>
+
+
